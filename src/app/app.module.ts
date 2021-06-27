@@ -9,6 +9,9 @@ import { Exemplo02Component } from './exemplo02/exemplo02.component';
 import { ModalContentComponent } from './modal-content/modal-content.component';
 import { Exemplo03Component } from './exemplo03/exemplo03.component';
 import { Exemplo04Component } from './exemplo04/exemplo04.component';
+import { Exemplo05Component } from './exemplo05/exemplo05.component';
+import { ModalsComponent } from './pages/modals/modals.component';
+import { DropdownsComponent } from './pages/dropdowns/dropdowns.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { Exemplo04Component } from './exemplo04/exemplo04.component';
     Exemplo02Component,
     ModalContentComponent,
     Exemplo03Component,
-    Exemplo04Component
+    Exemplo04Component,
+    Exemplo05Component,
+    ModalsComponent,
+    DropdownsComponent
   ],
   imports: [
     BrowserModule,

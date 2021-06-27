@@ -1,24 +1,38 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">ngx-bootstrap</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+    <i class="fab fa-angular"></i>
+    ngx-bootstrap
+  </a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 </nav>
 
-<div class="container">
-  <br>
-  <h3>Template</h3>
-  <app-exemplo01></app-exemplo01>
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/modals">
+              <i class="fab fa-angular"></i>
+              Modals
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/dropdowns">
+              <i class="fab fa-angular"></i>
+              Dropdowns
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <br><br>
-  <h3>Component</h3>
-  <app-exemplo02></app-exemplo02>
-
-  <br><br>
-  <h3>Nested</h3>
-  <app-exemplo03></app-exemplo03>
-
-  <br><br>
-  <h3>Scrolling long content</h3>
-  <app-exemplo04></app-exemplo04>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
 </div>
