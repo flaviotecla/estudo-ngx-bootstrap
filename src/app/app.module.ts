@@ -8,6 +8,7 @@ import { Exemplo01Component } from './exemplo01/exemplo01.component';
 import { Exemplo02Component } from './exemplo02/exemplo02.component';
 import { ModalContentComponent } from './modal-content/modal-content.component';
 import { Exemplo03Component } from './exemplo03/exemplo03.component';
+import { Exemplo04Component } from './exemplo04/exemplo04.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Exemplo03Component } from './exemplo03/exemplo03.component';
     Exemplo01Component,
     Exemplo02Component,
     ModalContentComponent,
-    Exemplo03Component
+    Exemplo03Component,
+    Exemplo04Component
   ],
   imports: [
     BrowserModule,
